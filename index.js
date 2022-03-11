@@ -28,7 +28,12 @@ function inserir(sinal) {
 }
 
 var historico = []
-document.getElementById('historico').innerHTML = historico
+document.getElementById('div-historico').innerHTML = historico
+
+function fazerHistorico() {
+    historico.push(document.getElementById("resultado").innerHTML)
+    document.getElementById("div-historico").innerHTML = historico
+}
 
 function resultado() {
     resultado = document.getElementById("resultado").innerHTML
@@ -36,9 +41,10 @@ function resultado() {
     {
         var resultado = document.getElementById('resultado').innerHTML = resultado + ' = ' + eval(resultado);
     }
-    historico.push(document.getElementById("historico").innerHTML)
-    document.getElementById("resultado").innerHTML = historico 
+    
+    // document.getElementById("resultado").innerHTML = historico 
 }
+
 
 const fazerRaizQuadrada = function() {
     var resultado = document.getElementById('resultado').innerHTML;
@@ -48,14 +54,21 @@ const fazerRaizQuadrada = function() {
     }
 }
 
-const fazerSeno = function(valor1,valor2) {
-    seno = Math.sin(valor1)
-    return seno
+
+const fazerSeno = function() {
+    var resultado = document.getElementById('resultado').innerHTML;
+    if(resultado)
+    {
+        var resultado = document.getElementById('resultado').innerHTML = 'sin(' + resultado + ') = ' + Math.sin(resultado);
+    }
 }
 
-const fazerCosseno = function(valor1,valor2) {
-    cosseno = Math.cos(valor1)
-    return cosseno
+const fazerCosseno = function() {
+    var resultado = document.getElementById('resultado').innerHTML;
+    if(resultado)
+    {
+        var resultado = document.getElementById('resultado').innerHTML = 'cos(' + resultado + ') = ' + Math.cos(resultado);
+    }
 }
 
 function valorPi() {
@@ -68,34 +81,6 @@ var pi = Math.PI
 function apagar() {
     document.getElementById("resultado").innerHTML = ""
 }
-
-// const fazerSoma = function(valor1,valor2) {
-//     soma = valor1 + valor2
-//     return soma
-// }
-
-// const fazerSubtracao = function(valor1,valor2) {
-//     subtracao = valor1 - valor2
-//     return subtracao
-// }
-
-// const fazerMultiplicacao = function(valor1,valor2) {
-//     multiplicacao = valor1 * valor2
-//     return multiplicacao
-// }
-
-// const fazerDivisao = function(valor1,valor2) {
-//     divisao = valor1 / valor2
-//     return divisao
-// }
-
-// const fazerResto = function(valor1,valor2) {
-//     resto = valor1%valor2
-//     return resto
-// }
- 
-// ---------------------------------------------------------------------- Operações + complexas
-
 
 const fazerPotenciacao = function(valor1,valor2) {
     potenciacao = Math.pow(valor1,valor2)
