@@ -33,8 +33,10 @@ var valor2 = parseFloat(prompt("Valor 2:"))
 
 const inserir = function(sinal) {
     valorEResultado.innerHTML = valor1 + sinal + valor2
-    resultado = Number(valorEResultado)
+    valores.push(valorEResultado)
 }
+
+console.log(valores) 
 console.log(typeof(resultado)) 
 var soma = 0
 var subtracao = 0
