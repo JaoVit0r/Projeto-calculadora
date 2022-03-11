@@ -14,51 +14,37 @@
       <br>
       <p id="resultado"></p>
     </head>
-     <!-- Colocar uma função js no onclick-->
     <main>
       <table>
-        <tr>
-            <!-- <th colspan="4"><h1 id="resultado"></h1></th> -->
-        </tr>
         <tr>
           <th><button class="botao" onclick="inserir('1')">1</button></th>
           <th><button class="botao" onclick="inserir('2')">2</button></th>
           <th><button class="botao" onclick="inserir('3')">3</button></th>
           <th><button class="botao" onclick="inserir('+')">+</button></th>
           <th><button class="botao" onclick="apagar()">C</button></th>
-
-          <!-- <th><button class="botao" onclick="fazerSoma(valor1,valor2)">+</button></th> -->
         <tr>
           <th><button class="botao" onclick="inserir('4')">4</button></th>
           <th><button class="botao" onclick="inserir('5')">5</button></th>
           <th><button class="botao" onclick="inserir('6')">6</button></th>
           <th><button class="botao" onclick="inserir('-')">-</button></th>
-          <!-- <th><button class="botao" onclick="fazerSubtracao(valor1,valor2)">-</button></th> -->
         </tr>
         <tr>
           <th><button class="botao" onclick="inserir('7')">7</button></th>
           <th><button class="botao" onclick="inserir('8')">8</button></th>
           <th><button class="botao" onclick="inserir('9')">9</button></th>
           <th><button class="botao" onclick="inserir('*')">x</button></th>
-          <!-- <th><button class="botao" onclick="fazerMultiplicacao(valor1,valor2)">x</button></th> -->
         </tr>
         <tr>
           <th><button class="botao" onclick="inserir('/')">/</button></th>
-          <!-- <th><button class="botao" onclick="fazerDivisao(valor1,valor2)">/</button></th> -->
           <th><button class="botao" onclick="inserir('0')">0</button></th>
           <th><button class="botao" style="padding: 0;" onclick="inserir('%')">Rest</button></th>
-          <!-- <th><button class="botao" style="padding: 0;" onclick="fazerResto(valor1,valor2)">Rest</button></th> -->
           <th><button class="botao" onclick="fazerRaizQuadrada()">√</button></th>
-          <!-- <th><button class="botao" onclick="fazerRaizQuadrada(valor1)">√</button></th> -->
         </tr>
         <tr>
           <th><button class="botao" onclick="inserir('**')">^</button></th>
-          <!-- <th><button class="botao" onclick="fazerPotenciacao(valor1,valor2)">Pot</button></th> -->
           <th><button class="botao" onclick="fazerSeno()">Sin</button></th>
-          <!-- <th><button class="botao" onclick="fazerSeno(valor1)">Sin</button></th> -->
           <th><button class="botao" onclick="fazerCosseno()">Cos</button></th>
-          <!-- <th><button class="botao" onclick="fazerCosseno(valor1,valor2)">Cos</button></th> -->
-          <th><button class="botao" onclick="valorPi()">Pi</button></th> <!-- Colocar ícone de pi-->
+          <th><button class="botao" onclick="valorPi()">Pi</button></th>
           <th><button class="botao" onclick="resultado()+fazerHistorico()">=</button></th>
         </tr>
     </table>
@@ -66,6 +52,7 @@
     <footer>
       <h5>Histórico:</h5>
       <div id="div-historico"></div>
+      <div id="limparHistorico"><button onclick="limparHistorico()">Limpar</button></div>
       <p id="historico"></p>
     </footer>
     
