@@ -1,4 +1,4 @@
-# Projeto-calculadora
+# Projeto_Calculadora
 
 Projeto relativo ao módulo de Javascript, do programa Vem Ser Tech do Ifood, em parceria com a Let'Code. 
 
